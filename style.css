@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+
+:root{
+    --success-color: #2ecc71;
+    --error-color:#e74c3c;
+}
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #34495e;
+    font-family: 'Open Sans', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+}
+h2{
+    color: white;
+    text-align: center;
+    margin: 0 0 20px;
+    font-weight: 500;
+}
+.container{
+    background-color: #191919;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(255, 255, 255, 0.4);
+    width: 400px;
+}
+.form{
+    padding: 30px 40px;
+}
+.form-control{
+    margin-bottom: 10px;
+    padding-bottom: 20px;
+    position: relative;
+}
+.form-control label{
+    color: rgb(236, 235, 235);
+    display: block;
+    margin-bottom: 5px
+}
+.form-control input{
+    background: none;
+    border: 2px solid #3498db;
+    border-radius: 24px;
+    display: block;
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    outline: none;
+    color: white;
+}
+.form-control input:focus{
+    outline: 0;
+    border-color: #2ecc71;
+}
+/* Massage styles */
+.form-control.success input{
+    border-color: var(--success-color)
+}
+.form-control.error input{
+    border-color: var(--error-color);
+}
+.form-control small{
+    color: var(--error-color);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    visibility: hidden;
+}
+.form-control.error small{
+    visibility: visible;
+}
+ .form button{
+     border: 0em;
+     cursor: pointer;
+     background: none;
+     border: 2px solid #2ecc71;
+     border-radius: 24px;
+     color: #ffffff;
+     display: block;
+     font-size: 16px;
+     text-align: center;
+     padding: 14px 40px;
+     margin: 20px auto; 
+     outline: none;
+ }
+ .form button:hover{
+     background: #2ecc71;
+ }
+
+
